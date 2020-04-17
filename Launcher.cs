@@ -1,12 +1,29 @@
 ﻿using System;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.Mediator.Original;
+using DesignPatterns.Singleton;
 using DesignPatterns.Strategy;
 
 namespace DesignPatterns
 {
     public static class Launcher
     {
+        public static void RunSingletonPattern()
+        {
+            Console.WriteLine("********** Singleton Pattern **********");
+            LoadBalancer instance1 = LoadBalancer.GetInstance();
+            LoadBalancer instance2 = LoadBalancer.GetInstance();
+
+            if(instance1 == instance2)
+            {
+                Console.WriteLine("Two instances are the same !");
+            }
+            else
+            {
+                Console.WriteLine("Two instances are not equal !");
+            }
+        }
+
         public static void RunMediatorPattern()
         {
             Console.WriteLine("********** Mediator Pattern **********");

@@ -6,7 +6,8 @@
         {
             //Launcher.RunFactoryMethodPattern();
             //Launcher.RunStrategyPattern();
-            Launcher.RunMediatorPattern();
+            //Launcher.RunMediatorPattern();
+            Launcher.RunSingletonPattern();
         }
     }
 }
