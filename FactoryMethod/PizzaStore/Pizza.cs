@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DesignPatterns.FactoryMethod
+namespace DesignPatterns.FactoryMethod.PizzaStore
 {
     // https://www.thespruceeats.com/new-ideas-for-pizza-toppings-2708776
     public abstract class Pizza 

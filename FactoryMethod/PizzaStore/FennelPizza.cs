@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DesignPatterns.FactoryMethod
+namespace DesignPatterns.FactoryMethod.PizzaStore
 {
     public class FennelPizza : Pizza
     {

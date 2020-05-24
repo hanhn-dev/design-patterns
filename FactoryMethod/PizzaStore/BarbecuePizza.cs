@@ -1,6 +1,6 @@
 using System;
 
-namespace DesignPatterns.FactoryMethod
+namespace DesignPatterns.FactoryMethod.PizzaStore
 {
     public class BarbecuePizza : Pizza
     {

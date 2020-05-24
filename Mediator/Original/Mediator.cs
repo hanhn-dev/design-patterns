@@ -1,5 +1,4 @@
-﻿using System;
-namespace DesignPatterns.Mediator.Original
+﻿namespace DesignPatterns.Mediator.Original
 {
     public abstract class Mediator
     {

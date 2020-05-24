@@ -7,7 +7,6 @@ namespace DesignPatterns.Mediator
 
         public override void HandleNotification(string from, string message)
         {
-            throw new NotImplementedException();
         }
     }
 }
