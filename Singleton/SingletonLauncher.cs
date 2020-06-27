@@ -2,9 +2,13 @@ using System;
 
 namespace DesignPatterns.Singleton
 {
-    public class SingletonLauncher : ILauncher
+    public class SingletonLauncher : Launcher
     {
-        public void Run()
+        public SingletonLauncher() : base("Singleton")
+        {
+        }
+
+        public override void Run()
         {
             Console.WriteLine("********** Singleton Pattern **********");
             LoadBalancer instance1 = LoadBalancer.GetInstance();

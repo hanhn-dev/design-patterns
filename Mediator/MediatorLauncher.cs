@@ -3,9 +3,13 @@ using DesignPatterns.Mediator.Original;
 
 namespace DesignPatterns.Mediator
 {
-    public class MediatorLauncher : ILauncher
+    public class MediatorLauncher : Launcher
     {
-        public void Run()
+        public MediatorLauncher() : base("Mediator")
+        {
+        }
+
+        public override void Run()
         {
             Console.WriteLine("********** Mediator Pattern **********");
             var mediator = new ConcreteMediator();

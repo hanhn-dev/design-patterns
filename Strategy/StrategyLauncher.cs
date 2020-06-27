@@ -2,9 +2,13 @@ using System;
 
 namespace DesignPatterns.Strategy
 {
-    public class StrategyLauncher : ILauncher
+    public class StrategyLauncher : Launcher
     {
-        public void Run()
+        public StrategyLauncher() : base("Strategy")
+        {
+        }
+
+        public override void Run()
         {
             TikiPaymentExample();
         }

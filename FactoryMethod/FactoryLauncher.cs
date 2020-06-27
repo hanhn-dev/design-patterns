@@ -3,9 +3,13 @@ using DesignPatterns.FactoryMethod.PizzaStore;
 
 namespace DesignPatterns.FactoryMethod
 {
-    public class FactoryLauncher : ILauncher
+    public class FactoryLauncher : Launcher
     {
-        public void Run()
+        public FactoryLauncher() : base("Factory Method")
+        {
+        }
+
+        public override void Run()
         {
             Console.WriteLine("********** PIZZA STORE **********");
             // Pizza Store

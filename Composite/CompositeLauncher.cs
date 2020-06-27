@@ -2,9 +2,13 @@ using System;
 
 namespace DesignPatterns.Composite
 {
-    public class CompositeLauncher : ILauncher
+    public class CompositeLauncher : Launcher
     {
-        public void Run()
+        public CompositeLauncher() : base("Composite")
+        {   
+        }
+
+        public override void Run()
         {
             Console.WriteLine("********** File System **********");
             var root = new DirectoryItem("projects");
