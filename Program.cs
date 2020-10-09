@@ -4,6 +4,7 @@ using DesignPatterns.ChainOfResponsibility;
 using DesignPatterns.Composite;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.Mediator;
+using DesignPatterns.Observer;
 using DesignPatterns.Singleton;
 using DesignPatterns.Strategy;
 
@@ -20,8 +21,9 @@ namespace DesignPatterns
             launchers.Add(new SingletonLauncher());
             launchers.Add(new StrategyLauncher());
             launchers.Add(new ChainOfResponsibilityLauncher());
+            launchers.Add(new ObserverLauncher());
 
-            Console.WriteLine("******** Select a Pattern ***********");
+            Console.WriteLine("**************** Select a Pattern *******************");
             
             for(var i = 1; i <= launchers.Count; i++)
             {
@@ -32,7 +34,9 @@ namespace DesignPatterns
 
             if (int.TryParse(userSelected, out var pattern))
             {
-                launchers[pattern-1].Run();
+                var launcher = launchers[pattern-1];
+                Console.WriteLine($"You have selected the pattern: {launcher.Name}");
+                launcher.Run();
             }
             else
             {
